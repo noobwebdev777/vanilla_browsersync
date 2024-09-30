@@ -1,0 +1,6 @@
+used browser-sync for dev-server -- done
+
+unable to combine eslint and prettier.
+
+need to change.
+

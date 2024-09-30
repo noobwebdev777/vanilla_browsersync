@@ -1,0 +1,28 @@
+{
+  "name": "vanilla_bs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "lint": "eslint .",
+  "format": "prettier --write .",
+  "lint:fix": "eslint . --fix",
+  "serve": "node bs-config.js",
+  "watch:lint": "nodemon --exec 'npm run lint:fix' --ext js,html,css",
+  "watch:format": "nodemon --exec 'npm run format' --ext js,html,css",
+  "dev": "npm run serve & npm run watch:lint & npm run watch:format"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "browser-sync": "^3.0.3",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.7",
+    "prettier": "3.3.3"
+  }
+}
